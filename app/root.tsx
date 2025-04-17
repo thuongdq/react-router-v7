@@ -2,6 +2,7 @@ import {
   isRouteErrorResponse,
   Links,
   Meta,
+  NavLink,
   Outlet,
   Scripts,
   ScrollRestoration,
@@ -42,7 +43,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <>
+      <div className="navbar gap-2">
+        <NavLink to={"/predro/about"} style={({ isActive, isPending, isTransitioning }) => ({ color: isPending ? 'red' : "blue" })}>About</NavLink>
+        <NavLink to={"/finances"}>Finances</NavLink>
+        <NavLink to={"/predro/post/6"}>Post 6</NavLink>
+      </div>
+      <Outlet />
+    </>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
