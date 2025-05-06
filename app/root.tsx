@@ -45,6 +45,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   return (
     <>
+      <div>Ceh</div>
       <div className="navbar gap-2">
         <NavLink
           to={'/predro/about'}
