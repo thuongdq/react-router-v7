@@ -45,8 +45,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   return (
     <>
-      <div>TEST</div>
-      {/* <div className="navbar gap-2">
+      <div className="navbar gap-2">
         <NavLink
           to={'/predro/about'}
           style={({ isActive, isPending, isTransitioning }) => ({
@@ -57,7 +56,7 @@ export default function App() {
         <NavLink to={'/finances'}>Finances</NavLink>
         <NavLink to={'/predro/post/6'}>Post 6</NavLink>
       </div>
-      <Outlet /> */}
+      <Outlet />
     </>
   );
 }
