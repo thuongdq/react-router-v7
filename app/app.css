@@ -15,5 +15,6 @@ body {
 }
 
 .test {
+  color: red;
   background-color: red;
 }
